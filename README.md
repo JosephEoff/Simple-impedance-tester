@@ -11,7 +11,7 @@ You'll need a PC with a soundcard that has "Line In" and "Line Out" jacks.  You'
 
 You'll also need this software.
 
-Open "Impedanceplotte.grc" with the GNU Radio Companion.  Enter the value of the series resistor, hook up your speaker or other device as shown in the drawing, then give the software a few seconds to analyze the impedance.
+Open "Impedanceplotter.grc" with the GNU Radio Companion.  Enter the value of the series resistor, hook up your speaker or other device as shown in the drawing, then give the software a few seconds to analyze the impedance.
 
 |Sample impedance plot of a car stereo speaker|
 |---------------------------------------------|
