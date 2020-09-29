@@ -382,8 +382,10 @@ blocks:
       \      return block\n    \n    def calculateInductanceFromImpedance(self,  impedances):\n\
       \        impedances[0] = 0\n        inductance = 1000000 * impedances/self.frequencies\n\
       \        return inductance\n        \n    def calculateCapacitanceFromImpedance(self,\
-      \  impedances):\n        impedances[0] = 1\n        capacitance = 1000000/(self.frequencies*impedances)\n\
-      \        return capacitance\n"
+      \  impedances):\n        impedances[0] = 1\n        #Need this because my sound\
+      \ card delivers a bunch of zeros if the input level goes too low.\n        try:\n\
+      \            capacitance = 1000000/(self.frequencies*impedances)\n        except:\n\
+      \            capacitance = impedances\n        \n        return capacitance\n"
     affinity: ''
     alias: ''
     block_size: int(block_size/2)
